@@ -1,6 +1,5 @@
 // user context
 import React from "react";
-import { FaLessThanEqual } from "react-icons/fa";
 
 const UserContext = React.createContext();
 

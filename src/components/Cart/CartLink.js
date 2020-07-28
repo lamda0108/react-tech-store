@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { CartContext } from "../../context/cart";
-import { FaDivide } from "react-icons/fa";
 
 export default function CartLink() {
   const { cartItems } = React.useContext(CartContext);

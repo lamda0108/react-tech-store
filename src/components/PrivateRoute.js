@@ -15,8 +15,7 @@ export default function PrivateRoute({ children, ...rest }) {
   );
 }
 
-{
-  /* <Route exact path='/u/:username/' component={ProfileComponent} />
+/* <Route exact path='/u/:username/' component={ProfileComponent} />
 <Route exact path='/u/:username/' render={() => <ProfileComponent />} /> */
-}
+
 // You generally use the render prop when you need some data from the component that contains your routes, since the component prop gives no real way of passing in additional props to the component.
