@@ -1,11 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
+import img from "../../assets/mainBcg.jpeg";
+
 export default function Product({ image, title, id, price }) {
-  const url = image.url;
   return (
     <article className="product">
       <div className="img-container">
-        <img src={url} alt={title}></img>
+        <img src={image ? image.url : img} alt={title}></img>
         <Link to={`products/${id}`} className="btn btn-primary product-link">
           details
         </Link>
@@ -17,3 +19,10 @@ export default function Product({ image, title, id, price }) {
     </article>
   );
 }
+
+Product.propTypes = {
+  image: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  price: PropTypes.number.isRequired,
+  id: PropTypes.number.isRequired,
+};

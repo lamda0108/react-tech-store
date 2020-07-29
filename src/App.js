@@ -14,7 +14,7 @@ import Products from "./pages/Products";
 import ProductDetails from "./pages/ProductDetails";
 import Alert from "./components/Alert";
 import PrivateRoute from "./components/PrivateRoute";
-
+import ScrollButton from "./components/ScrollButton";
 //components
 import Header from "./components/Header";
 
@@ -23,6 +23,7 @@ export default function App() {
     <Router>
       <Header />
       <Alert />
+      <ScrollButton />
       <Switch>
         <Route exact path="/">
           <Home />
